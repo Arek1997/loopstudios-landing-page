@@ -1,0 +1,38 @@
+.header {
+  min-height: 51.875rem;
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  padding: 3.125rem 1.875rem;
+
+  color: $white;
+
+  a {
+    color: $white;
+  }
+
+  &__nav {
+  }
+
+  &__nav--desktop {
+    display: none;
+
+    @include breakpoint-up(xlarge) {
+      display: block;
+    }
+  }
+
+  &__logo {
+  }
+
+  &__list {
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__hamburger {
+  }
+}

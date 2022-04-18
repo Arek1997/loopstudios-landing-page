@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
 
-   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Frontend Mentor | Loopstudios landing page</title>
-
-</head>
-
-<body>
-
-   <header>
-      <div class="header__up-bar">
-         <div class="logo">
-            <p>loopstudio</p>
-         </div>
-         <nav>
-            <ul>
-               <li>
-                  <a href="#">About</a>
-                  <a href="#">Careers</a>
-                  <a href="#">Events</a>
-                  <a href="#">Products</a>
-                  <a href="#">Support</a>
-               </li>
-            </ul>
-         </nav>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="" />
       </div>
-      <div class="header__center">
-         <div class="slogan">
-            <p>Immersive experiences that deliver</p>
-
-         </div>
+      <nav class="header__nav header__nav--desktop">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">About</a>
+            <a class="header__link" href="#">Careers</a>
+            <a class="header__link" href="#">Events</a>
+            <a class="header__link" href="#">Products</a>
+            <a class="header__link" href="#">Spport</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__hamburger">
+        <img src="images/icon-hamburger.svg" alt="hamburger manu" />
       </div>
-   </header>
-   <!-- 
+      <div class="header__slogan">
+        <p>Immersive experiences that deliver</p>
+      </div>
+    </header>
+    <!-- 
   
   
   
@@ -83,6 +89,5 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
-
+  </body>
 </html>
