@@ -6,8 +6,15 @@ const showMenu = function (val) {
   document.querySelector(
     ".header__nav--mobile"
   ).style.transform = `translateX(${val}%)`;
+  document.body.style.overflowY = `hidden`;
+};
+const closeMenu = function (val) {
+  val = this;
+  document.querySelector(
+    ".header__nav--mobile"
+  ).style.transform = `translateX(${val}%)`;
+  document.body.style.overflowY = `scroll`;
 };
 
 mobileMenu.addEventListener("click", showMenu.bind(0));
-
-closeMobileMenu.addEventListener("click", showMenu.bind(-100));
+closeMobileMenu.addEventListener("click", closeMenu.bind(-100));
