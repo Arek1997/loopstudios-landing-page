@@ -25,29 +25,53 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | Loopstudios landing page</title>
+    <script defer src="app/js/main.js"></script>
   </head>
 
   <body>
     <header class="header">
-      <div class="header__logo">
-        <img src="images/logo.svg" alt="" />
-      </div>
-      <nav class="header__nav header__nav--desktop">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#">About</a>
-            <a class="header__link" href="#">Careers</a>
-            <a class="header__link" href="#">Events</a>
-            <a class="header__link" href="#">Products</a>
-            <a class="header__link" href="#">Spport</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__hamburger">
-        <img src="images/icon-hamburger.svg" alt="hamburger manu" />
-      </div>
-      <div class="header__slogan">
-        <p>Immersive experiences that deliver</p>
+      <div class="container">
+        <div class="header__bar">
+          <div class="header__logo">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <nav class="header__nav header__nav--desktop">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">About</a>
+                <a class="header__link" href="#">Careers</a>
+                <a class="header__link" href="#">Events</a>
+                <a class="header__link" href="#">Products</a>
+                <a class="header__link" href="#">Spport</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__nav header__nav--mobile">
+            <div class="header__bar">
+              <div class="header__logo">
+                <img src="images/logo.svg" alt="" />
+              </div>
+              <div class="header__close">
+                <img src="images/icon-close.svg" alt="close menu" />
+              </div>
+            </div>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">About</a>
+                <a class="header__link" href="#">Careers</a>
+                <a class="header__link" href="#">Events</a>
+                <a class="header__link" href="#">Products</a>
+                <a class="header__link" href="#">Spport</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__hamburger">
+            <img src="images/icon-hamburger.svg" alt="hamburger menu" />
+          </div>
+        </div>
+        <div class="header__slogan">
+          <p>Immersive experiences that deliver</p>
+        </div>
       </div>
     </header>
     <!-- 
