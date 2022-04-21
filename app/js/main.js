@@ -1,20 +1,17 @@
-const mobileMenu = document.querySelector(".header__hamburger");
+const openMobileMenu = document.querySelector(".header__hamburger");
 const closeMobileMenu = document.querySelector(".header__close");
 
-const showMenu = function (val) {
-  val = this;
+const activeMenu = function (val, val2) {
+  this.val = val;
+  this.val2 = val2;
   document.querySelector(
     ".header__nav--mobile"
   ).style.transform = `translateX(${val}%)`;
-  document.body.style.overflowY = `hidden`;
-};
-const closeMenu = function (val) {
-  val = this;
-  document.querySelector(
-    ".header__nav--mobile"
-  ).style.transform = `translateX(${val}%)`;
-  document.body.style.overflowY = `scroll`;
+  document.body.style.overflowY = `${val2}`;
 };
 
-mobileMenu.addEventListener("click", showMenu.bind(0));
-closeMobileMenu.addEventListener("click", closeMenu.bind(-100));
+openMobileMenu.addEventListener("click", activeMenu.bind(this, 0, "hidden"));
+closeMobileMenu.addEventListener(
+  "click",
+  activeMenu.bind(this, -100, "scroll")
+);
