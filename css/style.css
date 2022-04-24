@@ -55,11 +55,21 @@ ul {
   background-size: 100%;
   color: hsl(0deg, 0%, 100%);
 }
+@media (min-width: 320px) and (orientation: portrait) {
+  .header {
+    min-height: 38rem;
+  }
+}
 .header a {
   color: hsl(0deg, 0%, 100%);
 }
 .header .container {
   min-height: 45rem;
+}
+@media (min-width: 320px) and (orientation: portrait) {
+  .header .container {
+    min-height: 38rem;
+  }
 }
 @media (min-width: 1024px) {
   .header {
@@ -199,4 +209,20 @@ ul {
   .header__slogan {
     font-size: 3.9rem;
   }
+}
+
+.section-1__image {
+  margin-bottom: 3.125rem;
+}
+.section-1__image img {
+  width: 100%;
+}
+.section-1__article h1 {
+  margin-bottom: 1rem;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  font-size: 1.5625rem;
+}
+.section-1__article p {
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */
