@@ -1,0 +1,92 @@
+.section-2 {
+  //   .container {
+  //   }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    margin-bottom: 3.125rem;
+    font-size: 1.625rem;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+  }
+
+  &__image--1 {
+    background-image: url("../images/mobile/image-deep-earth.jpg");
+
+    &::before {
+      content: "Deep earth";
+    }
+  }
+
+  &__image--2 {
+    background-image: url("../images/mobile/image-night-arcade.jpg");
+
+    &::before {
+      content: "Night arcade";
+    }
+  }
+  &__image--3 {
+    background-image: url("../images/mobile/image-soccer-team.jpg");
+
+    &::before {
+      content: "Soccer team VR";
+    }
+  }
+  &__image--4 {
+    background-image: url("../images/mobile/image-grid.jpg");
+
+    &::before {
+      content: "The grid";
+    }
+  }
+  &__image--5 {
+    background-image: url("../images/mobile/image-from-above.jpg");
+
+    &::before {
+      content: "From up above VR";
+    }
+  }
+  &__image--1 {
+    background-image: url("../images/mobile/image-deep-earth.jpg");
+
+    &::before {
+      content: "Deep earth";
+    }
+  }
+  &__image--6 {
+    background-image: url("../images/mobile/image-pocket-borealis.jpg");
+
+    &::before {
+      content: "Pocket borealis";
+    }
+  }
+  &__image--7 {
+    background-image: url("../images/mobile/image-curiosity.jpg");
+
+    &::before {
+      content: "The curiosity";
+    }
+  }
+  &__image--8 {
+    background-image: url("../images/mobile/image-fisheye.jpg");
+
+    &::before {
+      content: "Make it fisheye";
+    }
+  }
+
+  .btn {
+    max-width: 200px;
+    font-family: "Alata";
+    background-color: transparent;
+    padding: 13px 50px;
+    margin: 0 auto;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}

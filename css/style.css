@@ -15,7 +15,6 @@ html {
 body {
   position: relative;
   max-width: 1920px;
-  height: 300vh;
   margin: 0 auto;
   font-family: "Alata", sans-serif;
   font-weight: 400;
@@ -45,6 +44,28 @@ ul {
   .container {
     padding: 3.9375rem 10.1875rem;
   }
+}
+
+.section-2__image {
+  position: relative;
+  height: 9.6875rem;
+  margin-bottom: 1.875rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-2 ::before {
+  display: block;
+  position: absolute;
+  max-width: 36%;
+  top: 60%;
+  left: 5%;
+  font-family: "Josefin Sans";
+  color: hsl(0deg, 0%, 100%);
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 
 .header {
@@ -351,4 +372,79 @@ ul {
   .section-1__article p {
     font-size: 1.1rem;
   }
+}
+
+.section-2__content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.section-2 h1 {
+  margin-bottom: 3.125rem;
+  font-size: 1.625rem;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+}
+.section-2__image--1 {
+  background-image: url("../images/mobile/image-deep-earth.jpg");
+}
+.section-2__image--1::before {
+  content: "Deep earth";
+}
+.section-2__image--2 {
+  background-image: url("../images/mobile/image-night-arcade.jpg");
+}
+.section-2__image--2::before {
+  content: "Night arcade";
+}
+.section-2__image--3 {
+  background-image: url("../images/mobile/image-soccer-team.jpg");
+}
+.section-2__image--3::before {
+  content: "Soccer team VR";
+}
+.section-2__image--4 {
+  background-image: url("../images/mobile/image-grid.jpg");
+}
+.section-2__image--4::before {
+  content: "The grid";
+}
+.section-2__image--5 {
+  background-image: url("../images/mobile/image-from-above.jpg");
+}
+.section-2__image--5::before {
+  content: "From up above VR";
+}
+.section-2__image--1 {
+  background-image: url("../images/mobile/image-deep-earth.jpg");
+}
+.section-2__image--1::before {
+  content: "Deep earth";
+}
+.section-2__image--6 {
+  background-image: url("../images/mobile/image-pocket-borealis.jpg");
+}
+.section-2__image--6::before {
+  content: "Pocket borealis";
+}
+.section-2__image--7 {
+  background-image: url("../images/mobile/image-curiosity.jpg");
+}
+.section-2__image--7::before {
+  content: "The curiosity";
+}
+.section-2__image--8 {
+  background-image: url("../images/mobile/image-fisheye.jpg");
+}
+.section-2__image--8::before {
+  content: "Make it fisheye";
+}
+.section-2 .btn {
+  max-width: 200px;
+  font-family: "Alata";
+  background-color: transparent;
+  padding: 13px 50px;
+  margin: 0 auto;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@ html {
 body {
   position: relative;
   max-width: 1920px;
-  height: 300vh;
+  // height: 300vh;
   margin: 0 auto;
   font-family: "Alata", sans-serif;
   font-weight: 400;
@@ -44,5 +44,27 @@ ul {
   }
 }
 
-.section {
+.section-2 {
+  &__image {
+    position: relative;
+    height: 9.6875rem;
+    margin-bottom: 1.875rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  ::before {
+    display: block;
+    position: absolute;
+    max-width: 36%;
+    top: 60%;
+    left: 5%;
+    font-family: "Josefin Sans";
+    color: $white;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
 }
