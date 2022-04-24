@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  position: relative;
   max-width: 1920px;
   height: 300vh;
   margin: 0 auto;
@@ -41,4 +42,7 @@ ul {
   @media (min-width: 1024px) {
     padding: 3.9375rem 10.1875rem;
   }
+}
+
+.section {
 }
