@@ -61,6 +61,14 @@
         font-size: 1.5rem;
       }
 
+      @media (min-width: 360px) {
+        font-size: 1.8rem;
+      }
+
+      @media (min-width: 850px) {
+        font-size: 1.5rem;
+      }
+
       @media (min-width: 1024px) {
         font-size: 2.2rem;
       }
@@ -75,8 +83,20 @@
         font-size: 0.9rem;
       }
 
+      @media (min-width: 360px) {
+        font-size: 1rem;
+      }
+
+      @media (min-width: 640px) {
+        font-size: 1.2rem;
+      }
+
+      @media (min-width: 850px) {
+        font-size: 1rem;
+      }
+
       @media (min-width: 1024px) {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
       }
     }
   }

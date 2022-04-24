@@ -307,6 +307,16 @@ ul {
     font-size: 1.5rem;
   }
 }
+@media (min-width: 360px) {
+  .section-1__article h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 850px) {
+  .section-1__article h1 {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 1024px) {
   .section-1__article h1 {
     font-size: 2.2rem;
@@ -322,8 +332,23 @@ ul {
     font-size: 0.9rem;
   }
 }
+@media (min-width: 360px) {
+  .section-1__article p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 640px) {
+  .section-1__article p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 850px) {
+  .section-1__article p {
+    font-size: 1rem;
+  }
+}
 @media (min-width: 1024px) {
   .section-1__article p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=style.css.map */
