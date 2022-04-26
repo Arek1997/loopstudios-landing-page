@@ -80,12 +80,19 @@ ul {
     min-height: 38rem;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 475px) {
   .header {
-    background-image: url("../images/desktop/image-hero.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .header {
+    background-image: url("../images/desktop/image-hero.jpg");
+    min-height: 28rem;
+  }
+}
+@media (min-width: 850px) {
   .header {
     min-height: 25rem;
   }
@@ -108,7 +115,12 @@ ul {
     min-height: 38rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .header .container {
+    min-height: 28rem;
+  }
+}
+@media (min-width: 850px) {
   .header .container {
     min-height: 25rem;
   }
@@ -135,9 +147,9 @@ ul {
           justify-content: space-between;
   margin-bottom: 8.8125rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .header__bar {
-    margin-bottom: 6.8125rem;
+    margin-bottom: 4.8125rem;
   }
 }
 @media (min-width: 1280px) {
@@ -221,7 +233,7 @@ ul {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 625px) and (orientation: portrait) {
+@media (min-width: 625px) {
   .header__hamburger img {
     height: 2rem;
   }
@@ -244,6 +256,13 @@ ul {
 @media (min-width: 375px) {
   .header__slogan {
     font-size: 2.375rem;
+  }
+}
+@media (min-width: 768px) {
+  .header__slogan {
+    font-size: 2.1rem;
+    max-width: 31.25rem;
+    padding: 2rem 2.1rem;
   }
 }
 @media (min-width: 1024px) {
