@@ -49,15 +49,20 @@ ul {
 .section-2__image {
   position: relative;
   height: 9.6875rem;
-  margin-bottom: 1.875rem;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.section-2 ::before {
-  display: block;
+@media (min-width: 768px) {
+  .section-2__image {
+    height: 28.125rem;
+    max-width: 15.9375rem;
+  }
+}
+.section-2__image::before {
   position: absolute;
-  max-width: 36%;
+  max-width: 42%;
   top: 60%;
   left: 5%;
   font-family: "Josefin Sans";
@@ -66,6 +71,30 @@ ul {
   text-align: left;
   text-transform: uppercase;
   font-size: 1.25rem;
+  z-index: 1;
+}
+@media (min-width: 425px) {
+  .section-2__image::before {
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) {
+  .section-2__image::before {
+    left: 15%;
+    top: 80%;
+    max-width: 60%;
+    font-size: 1.8rem;
+  }
+}
+.section-2__image::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6));
 }
 
 .header {
@@ -396,6 +425,21 @@ ul {
 .section-2__content {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 1.875rem;
+}
+@media (min-width: 768px) {
+  .section-2__content {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .section-2__content {
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 1.875rem;
+       -moz-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
 }
 .section-2 h1 {
   margin-bottom: 3.125rem;
@@ -406,11 +450,21 @@ ul {
 .section-2__image--1 {
   background-image: url("../images/mobile/image-deep-earth.jpg");
 }
+@media (min-width: 768px) {
+  .section-2__image--1 {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+  }
+}
 .section-2__image--1::before {
   content: "Deep earth";
 }
 .section-2__image--2 {
   background-image: url("../images/mobile/image-night-arcade.jpg");
+}
+@media (min-width: 768px) {
+  .section-2__image--2 {
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+  }
 }
 .section-2__image--2::before {
   content: "Night arcade";
@@ -418,11 +472,21 @@ ul {
 .section-2__image--3 {
   background-image: url("../images/mobile/image-soccer-team.jpg");
 }
+@media (min-width: 768px) {
+  .section-2__image--3 {
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+  }
+}
 .section-2__image--3::before {
   content: "Soccer team VR";
 }
 .section-2__image--4 {
   background-image: url("../images/mobile/image-grid.jpg");
+}
+@media (min-width: 768px) {
+  .section-2__image--4 {
+    background-image: url("../images/desktop/image-grid.jpg");
+  }
 }
 .section-2__image--4::before {
   content: "The grid";
@@ -430,17 +494,21 @@ ul {
 .section-2__image--5 {
   background-image: url("../images/mobile/image-from-above.jpg");
 }
+@media (min-width: 768px) {
+  .section-2__image--5 {
+    background-image: url("../images/desktop/image-from-above.jpg");
+  }
+}
 .section-2__image--5::before {
   content: "From up above VR";
 }
-.section-2__image--1 {
-  background-image: url("../images/mobile/image-deep-earth.jpg");
-}
-.section-2__image--1::before {
-  content: "Deep earth";
-}
 .section-2__image--6 {
   background-image: url("../images/mobile/image-pocket-borealis.jpg");
+}
+@media (min-width: 768px) {
+  .section-2__image--6 {
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+  }
 }
 .section-2__image--6::before {
   content: "Pocket borealis";
@@ -448,11 +516,21 @@ ul {
 .section-2__image--7 {
   background-image: url("../images/mobile/image-curiosity.jpg");
 }
+@media (min-width: 768px) {
+  .section-2__image--7 {
+    background-image: url("../images/desktop/image-curiosity.jpg");
+  }
+}
 .section-2__image--7::before {
   content: "The curiosity";
 }
 .section-2__image--8 {
   background-image: url("../images/mobile/image-fisheye.jpg");
+}
+@media (min-width: 768px) {
+  .section-2__image--8 {
+    background-image: url("../images/desktop/image-fisheye.jpg");
+  }
 }
 .section-2__image--8::before {
   content: "Make it fisheye";
@@ -462,7 +540,7 @@ ul {
   font-family: "Alata";
   background-color: transparent;
   padding: 13px 50px;
-  margin: 0 auto;
+  margin: 3.125rem auto;
   font-size: 15px;
   letter-spacing: 3px;
   text-transform: uppercase;
