@@ -198,9 +198,6 @@ ul {
     margin-bottom: 8.8125rem;
   }
 }
-.header__logo {
-  display: inline-block;
-}
 .header__logo img {
   height: 1.5625rem;
 }
@@ -572,5 +569,100 @@ ul {
     grid-row: 1;
     justify-self: end;
     margin: 0 0 1.8rem 0;
+  }
+}
+
+.footer {
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .footer .container {
+    grid-template-columns: 2fr auto auto 3fr;
+    grid-template-rows: 1fr auto;
+    row-gap: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__logo {
+    justify-self: start;
+  }
+}
+.footer__logo img {
+  height: 1.5625rem;
+  margin-bottom: 3.125rem;
+}
+@media (min-width: 1024px) {
+  .footer__logo img {
+    margin-bottom: 0;
+  }
+}
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .footer__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    grid-row: 2;
+  }
+}
+.footer__links a {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1.8rem;
+}
+@media (min-width: 375px) {
+  .footer__links a {
+    margin-bottom: 2.1875rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__links a {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}
+.footer__social {
+  margin: 1.875rem 0 1.875rem 0;
+}
+@media (min-width: 1024px) {
+  .footer__social {
+    grid-column: 4/5;
+    margin: 0;
+    text-align: right;
+  }
+}
+.footer__social a {
+  margin-right: 20px;
+}
+.footer__social a:last-child {
+  margin-right: 0;
+}
+@media (min-width: 1024px) {
+  .footer__copy {
+    grid-column: 3/5;
+    grid-row: 2;
+    justify-self: end;
+  }
+}
+.footer__copy p {
+  color: hsl(0deg, 0%, 55%);
+  font-size: 0.75rem;
+}
+@media (min-width: 375px) {
+  .footer__copy p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
