@@ -81,6 +81,16 @@ ul {
         max-width: 60%;
         font-size: 1.8rem;
       }
+
+      @media (min-width: 1024px) {
+        max-width: 80%;
+        font-size: 1.4rem;
+      }
+
+      @media (min-width: 1280px) {
+        max-width: 60%;
+        font-size: 1.8rem;
+      }
     }
 
     &::after {
