@@ -38,6 +38,7 @@
     }
 
     a {
+      position: relative;
       color: $white;
       margin-bottom: 1.8rem;
 
@@ -48,6 +49,17 @@
       @media (min-width: 1024px) {
         margin-bottom: 0;
         margin-right: 2rem;
+
+        &:hover::after {
+          content: "";
+          position: absolute;
+          bottom: -11px;
+          left: 50%;
+          width: 60%;
+          height: 3px;
+          transform: translateX(-50%);
+          background-color: $white;
+        }
       }
     }
   }
@@ -62,7 +74,23 @@
     }
 
     a {
+      position: relative;
       margin-right: 20px;
+
+      &::after {
+        transition: 0.5s;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        width: 100%;
+        height: 3px;
+        transform: translateX(-50%);
+        background-color: $white;
+      }
 
       @media (min-width: 1024px) {
         // margin-right: 0.9375rem;

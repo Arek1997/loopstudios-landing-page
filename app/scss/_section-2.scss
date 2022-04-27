@@ -130,9 +130,17 @@
     background-color: transparent;
     padding: 13px 50px;
     margin: 3.125rem auto;
+    border: 2px solid $black;
     font-size: 0.9375rem;
     letter-spacing: 3px;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: $halfSecond;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
 
     @media (min-width: 1024px) {
       grid-column: 3/5;

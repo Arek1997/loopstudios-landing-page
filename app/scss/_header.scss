@@ -96,9 +96,25 @@
     }
 
     .header__link {
+      position: relative;
       display: inline-block;
       margin-right: 2.0625rem;
       font-size: 1rem;
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        width: 60%;
+        height: 3px;
+        transform: translateX(-50%);
+        background-color: $white;
+      }
+
+      &::after {
+        transition: $halfSecond;
+      }
     }
 
     .header__item:nth-of-type(5) a {
