@@ -1,6 +1,10 @@
 // const header = document.querySelector(".header"); Implement sticky nav
 const openMobileMenu = document.querySelector(".header__hamburger");
 const closeMobileMenu = document.querySelector(".header__close");
+const year = document.querySelector(".year");
+
+const currYear = new Date().getFullYear();
+year.textContent = currYear;
 
 const activeMenu = function (val, val2) {
   this.val = val;
