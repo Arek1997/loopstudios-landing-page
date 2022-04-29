@@ -42,6 +42,11 @@
       color: $white;
       margin-bottom: 1.8rem;
 
+      &::after {
+        content: "";
+        transition: $halfSecond;
+      }
+
       @media (min-width: 375px) {
         margin-bottom: 2.1875rem;
       }
@@ -51,7 +56,6 @@
         margin-right: 2rem;
 
         &:hover::after {
-          content: "";
           position: absolute;
           bottom: -11px;
           left: 50%;
@@ -78,11 +82,11 @@
       margin-right: 20px;
 
       &::after {
-        transition: 0.5s;
+        content: "";
+        transition: $halfSecond;
       }
 
       &:hover::after {
-        content: "";
         position: absolute;
         bottom: -11px;
         left: 50%;

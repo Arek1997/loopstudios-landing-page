@@ -100,9 +100,14 @@
       display: inline-block;
       margin-right: 2.0625rem;
       font-size: 1rem;
+      transition: $halfSecond;
+
+      &::after {
+        content: "";
+        transition: $halfSecond;
+      }
 
       &:hover::after {
-        content: "";
         position: absolute;
         bottom: -11px;
         left: 50%;
@@ -110,10 +115,6 @@
         height: 3px;
         transform: translateX(-50%);
         background-color: $white;
-      }
-
-      &::after {
-        transition: $halfSecond;
       }
     }
 

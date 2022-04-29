@@ -103,8 +103,8 @@ ul {
     }
 
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       width: 100%;
       height: 100%;
       transform: translateX(-50%);
