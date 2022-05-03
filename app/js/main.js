@@ -21,6 +21,12 @@ const activeMenu = function (val, val2) {
   document.body.style.overflowY = `${val2}`;
 };
 
+const smoothScroll = function (arg) {
+  document.querySelector(arg).scrollIntoView({
+    behavior: "smooth",
+  });
+};
+
 openMobileMenu.addEventListener("click", activeMenu.bind(this, 0, "hidden"));
 closeMobileMenu.addEventListener(
   "click",
@@ -29,5 +35,10 @@ closeMobileMenu.addEventListener(
 
 mobMenu.addEventListener("click", function (e) {
   const link = e.target;
-  if (link.classList.contains("header__link")) activeMenu(-100, "scroll");
+  if (link.classList.contains("header__link")) {
+    e.preventDefault();
+    const getHrefAttr = e.target.getAttribute("href");
+    activeMenu(-100, "scroll");
+    setTimeout(() => smoothScroll(getHrefAttr), 500);
+  }
 });
