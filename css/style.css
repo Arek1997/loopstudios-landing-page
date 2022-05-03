@@ -1,6 +1,43 @@
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes moveUp {
+  0% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes moveUp {
+  0% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -125,6 +162,8 @@ ul {
   background-position: center top;
   background-size: 100%;
   color: hsl(0deg, 0%, 100%);
+  -webkit-animation: appear 1.4s ease-in-out;
+          animation: appear 1.4s ease-in-out;
 }
 @media (min-width: 320px) and (orientation: portrait) {
   .header {
@@ -318,6 +357,8 @@ ul {
   line-height: 1;
   padding: 2.0625rem 2.75rem 2.0625rem 2.1875rem;
   border: 2px solid white;
+  -webkit-animation: appear 6s, moveUp 2s;
+          animation: appear 6s, moveUp 2s;
 }
 @media (min-width: 375px) {
   .header__slogan {

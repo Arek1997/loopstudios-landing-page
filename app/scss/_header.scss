@@ -4,6 +4,7 @@
   background-position: center top;
   background-size: 100%;
   color: $white;
+  animation: appear 1.4s ease-in-out;
 
   @media (min-width: 320px) and (orientation: portrait) {
     min-height: 38rem;
@@ -182,6 +183,7 @@
     line-height: 1;
     padding: 2.0625rem 2.75rem 2.0625rem 2.1875rem;
     border: 2px solid white;
+    animation: appear 6s, moveUp 2s;
 
     @media (min-width: 375px) {
       font-size: 2.375rem;

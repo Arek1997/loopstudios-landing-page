@@ -1,4 +1,5 @@
 // const header = document.querySelector(".header"); Implement sticky nav
+const mobMenu = document.querySelector(".header__nav--mobile");
 const openMobileMenu = document.querySelector(".header__hamburger");
 const closeMobileMenu = document.querySelector(".header__close");
 const year = document.querySelector(".year");
@@ -25,3 +26,8 @@ closeMobileMenu.addEventListener(
   "click",
   activeMenu.bind(this, -100, "scroll")
 );
+
+mobMenu.addEventListener("click", function (e) {
+  const link = e.target;
+  if (link.classList.contains("header__link")) activeMenu(-100, "scroll");
+});
